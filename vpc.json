@@ -2,9 +2,9 @@
     "EKSCluster": {
        "Type": "AWS::EKS::Cluster",
        "Properties": {
-          "Name": "Prod",
+          "Name": "ekscluster",
           "Version": "1.20",
-          "RoleArn": "arn:aws:iam::882956824445:user/soundarya.sarla@wisseninfotech.com",
+          "RoleArn": "arn:aws:iam::882956824445:role/eksctl-Soundarya-Eks-addon-iamserviceaccount-Role1-WLW7THI3QS3F",
           "ResourcesVpcConfig": {
              "SecurityGroupIds": [
                 "sg-025674e6a677f576e"
