@@ -3,13 +3,13 @@ EKSCluster:
     Properties:
       Name: Prod
       Version: "1.20"
-      RoleArn: "arn:aws:cloudformation:ap-northeast-3:882956824445:stack/eksctl-Soundarya-Ekscluster-cluster/796fc1f0-9ab8-11ec-b060-0a880c975b3c"
+      RoleArn: "arn:aws:iam::882956824445:role/Admin_role_Soundarya"
       ResourcesVpcConfig:
         SecurityGroupIds:
-          - sg-025674e6a677f576e
+          - sg-004f04e84167c7b51
         SubnetIds:
-          - subnet-b150bfca
-          - subnet-66fe320f
+          - subnet-5c59d824
+          - subnet-7bda4926
         EndpointPublicAccess: false
         EndpointPrivateAccess: true
         PublicAccessCidrs: [ "1.1.1.2/32" ]
