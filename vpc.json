@@ -1,0 +1,42 @@
+{
+    "EKSCluster": {
+       "Type": "AWS::EKS::Cluster",
+       "Properties": {
+          "Name": "Prod",
+          "Version": "1.20",
+          "RoleArn": "arn:aws:iam::882956824445:user/soundarya.sarla@wisseninfotech.com",
+          "ResourcesVpcConfig": {
+             "SecurityGroupIds": [
+                "sg-025674e6a677f576e"
+             ],
+             "SubnetIds": [
+                "subnet-b150bfca",
+                "subnet-66fe320f"
+             ],
+             "EndpointPublicAccess": false,
+             "EndpointPrivateAccess": true,
+             "PublicAccessCidrs": [
+                "1.1.1.2/32"
+             ]
+          },
+          "Logging": {
+             "ClusterLogging": {
+                "EnabledTypes": [
+                   {
+                      "Type": "api"
+                   },
+                   {
+                      "Type": "audit"
+                   }
+                ]
+             }
+          },
+          "Tags": [
+             {
+                "Key": "key",
+                "Value": "val"
+             }
+          ]
+       }
+    }
+ }
