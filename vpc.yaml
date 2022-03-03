@@ -6,50 +6,11 @@ Mappings:
   ARNNamespace:
     us-east-1:
       Partition: aws
-    us-east-2:
-      Partition: aws
-    us-west-2:
-      Partition: aws
-    us-west-1:
-      Partition: aws
-    us-east-1:
-      Partition: aws
-    eu-central-1:
-      Partition: aws
-    ap-southeast-1:
-      Partition: aws
-    ap-northeast-1:
-      Partition: aws
-    ap-southeast-2:
-      Partition: aws
-    sa-east-1:
-      Partition: aws
-    us-gov-west-1:
-      Partition: aws-us-gov
+   
   S3Region:
     us-east-1:
       Region: us-east-1
-    us-east-2:
-      Region: us-east-2
-    us-west-2:
-      Region: us-east-1
-    us-west-1:
-      Region: us-east-1
-    us-east-1:
-      Region: us-east-1
-    eu-central-1:
-      Region: us-east-1
-    ap-southeast-1:
-      Region: us-east-1
-    ap-northeast-1:
-      Region: us-east-1
-    ap-southeast-2:
-      Region: us-east-1
-    sa-east-1:
-      Region: us-east-1
-    us-gov-west-1:
-      Region: us-gov-west-1
-Parameters:
+  Parameters:
   Name:
     Type: String
     Description: Name references build template for automation
@@ -96,7 +57,7 @@ Resources:
             Ref: AWS::StackName
         - Key: kubernetes.io/role/elb
           Value: shared
-        - Key: alpha.eksctl.io/cluster-name
+        - Key: alpha.eksctl.io/kubernetes cluster
           Value: !Sub "${AWS::StackName}"
         - Key: eksctl.cluster.k8s.io/v1alpha1/cluster-name
           Value: !Sub "${AWS::StackName}"
@@ -472,3 +433,4 @@ Outputs:
   Region:
     Description: Stack location
     Value: !Ref AWS::Region
+ 
