@@ -4,7 +4,7 @@
        "Properties": {
           "Name": "ekscluster",
           "Version": "1.20",
-          "RoleArn": "arn:aws:iam::882956824445:role/eksctl-Soundarya-Eks-addon-iamserviceaccount-Role1-WLW7THI3QS3F",
+          "RoleArn": "arn:aws:cloudformation:ap-northeast-3:882956824445:stack/eksctl-Soundarya-Ekscluster-cluster/796fc1f0-9ab8-11ec-b060-0a880c975b3c",
           "ResourcesVpcConfig": {
              "SecurityGroupIds": [
                 "sg-025674e6a677f576e"
